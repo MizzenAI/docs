@@ -5,20 +5,12 @@
   "colors": {
     "primary": "#C0392B",
     "light": "#E74C3C",
-    "dark": "#A93226",
-    "background": {
-      "light": "#FFFFFF",
-      "dark": "#0A0A0A"
-    }
+    "dark": "#A93226"
   },
   "favicon": "/images/favicon.svg",
   "logo": {
     "light": "/images/logo-light.svg",
     "dark": "/images/logo-dark.svg"
-  },
-  "i18n": {
-    "defaultLocale": "en",
-    "locales": ["cn"]
   },
   "navigation": {
     "tabs": [
@@ -108,6 +100,18 @@
       "label": "Get API Key",
       "href": "https://clawsaid.com/participant/settings"
     }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
