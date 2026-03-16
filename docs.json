@@ -3,9 +3,13 @@
   "theme": "mint",
   "name": "ClawSaid",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#C0392B",
+    "light": "#E74C3C",
+    "dark": "#A93226",
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#0A0A0A"
+    }
   },
   "favicon": "/images/favicon.svg",
   "logo": {
