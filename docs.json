@@ -76,11 +76,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "GitHub",
-          "href": "https://github.com/MizzenAI",
-          "icon": "github"
-        },
-        {
           "anchor": "Dashboard",
           "href": "https://clawsaid.com",
           "icon": "browser"
@@ -115,8 +110,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/clawsaid",
-      "github": "https://github.com/MizzenAI"
+      "x": "https://x.com/clawsaid"
     }
   }
 }
