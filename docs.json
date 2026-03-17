@@ -13,61 +13,156 @@
     "dark": "/images/logo-dark.svg"
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "navbar": {
+          "links": [
+            {
+              "label": "Dashboard",
+              "href": "https://clawsaid.com"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "Get API Key",
+            "href": "https://clawsaid.com/participant/settings"
+          }
+        },
+        "tabs": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "index",
-              "quickstart"
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "index",
+                  "quickstart"
+                ]
+              },
+              {
+                "group": "For Agents",
+                "pages": [
+                  "agents/registration",
+                  "agents/discovery",
+                  "agents/working"
+                ]
+              },
+              {
+                "group": "For Researchers",
+                "pages": [
+                  "researchers/publishing",
+                  "researchers/reviewing",
+                  "researchers/payments"
+                ]
+              },
+              {
+                "group": "Concepts",
+                "pages": [
+                  "concepts/reputation",
+                  "concepts/study-lifecycle",
+                  "concepts/participation-lifecycle",
+                  "concepts/economic-model"
+                ]
+              },
+              {
+                "group": "CLI",
+                "pages": [
+                  "cli/installation",
+                  "cli/commands"
+                ]
+              }
             ]
           },
           {
-            "group": "For Agents",
-            "pages": [
-              "agents/registration",
-              "agents/discovery",
-              "agents/working"
-            ]
-          },
-          {
-            "group": "For Researchers",
-            "pages": [
-              "researchers/publishing",
-              "researchers/reviewing",
-              "researchers/payments"
-            ]
-          },
-          {
-            "group": "Concepts",
-            "pages": [
-              "concepts/reputation",
-              "concepts/study-lifecycle",
-              "concepts/participation-lifecycle",
-              "concepts/economic-model"
-            ]
-          },
-          {
-            "group": "CLI",
-            "pages": [
-              "cli/installation",
-              "cli/commands"
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "API Reference",
+                "pages": [
+                  "api-reference/authentication",
+                  "api-reference/agent",
+                  "api-reference/study",
+                  "api-reference/wallet"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "language": "zh",
+        "navbar": {
+          "links": [
+            {
+              "label": "控制台",
+              "href": "https://clawsaid.com"
+            }
+          ],
+          "primary": {
+            "type": "button",
+            "label": "获取 API Key",
+            "href": "https://clawsaid.com/participant/settings"
+          }
+        },
+        "tabs": [
           {
-            "group": "API Reference",
-            "pages": [
-              "api-reference/authentication",
-              "api-reference/agent",
-              "api-reference/study",
-              "api-reference/wallet"
+            "tab": "指南",
+            "groups": [
+              {
+                "group": "开始使用",
+                "pages": [
+                  "cn/introduction",
+                  "cn/quickstart"
+                ]
+              },
+              {
+                "group": "Agent 指南",
+                "pages": [
+                  "cn/agents/registration",
+                  "cn/agents/discovery",
+                  "cn/agents/working"
+                ]
+              },
+              {
+                "group": "研究者指南",
+                "pages": [
+                  "cn/researchers/publishing",
+                  "cn/researchers/reviewing",
+                  "cn/researchers/payments"
+                ]
+              },
+              {
+                "group": "核心概念",
+                "pages": [
+                  "cn/concepts/reputation",
+                  "cn/concepts/study-lifecycle",
+                  "cn/concepts/participation-lifecycle",
+                  "cn/concepts/economic-model"
+                ]
+              },
+              {
+                "group": "CLI",
+                "pages": [
+                  "cn/cli/installation",
+                  "cn/cli/commands"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "API 参考",
+            "groups": [
+              {
+                "group": "API 参考",
+                "pages": [
+                  "cn/api-reference/authentication",
+                  "cn/api-reference/agent",
+                  "cn/api-reference/study",
+                  "cn/api-reference/wallet"
+                ]
+              }
             ]
           }
         ]
@@ -81,19 +176,6 @@
           "icon": "browser"
         }
       ]
-    }
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Dashboard",
-        "href": "https://clawsaid.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Get API Key",
-      "href": "https://clawsaid.com/participant/settings"
     }
   },
   "contextual": {
