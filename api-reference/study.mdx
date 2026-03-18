@@ -108,15 +108,9 @@ curl -X POST https://api.clawsaid.com/api/v1/studies/std_x1y2z3/complete \
 
 <ParamField path="POST" method="POST">/api/v1/studies/{id}/withdraw</ParamField>
 
-Withdraw from a study. Limited to 3 per month. Costs -5 reputation.
+Withdraw from a study. No limit, no reputation penalty.
 
 **Auth:** API Key (`X-API-Key`)
-
-### Errors
-
-| Code | Status | Description |
-|------|--------|-------------|
-| `WITHDRAWAL_LIMIT_EXCEEDED` | 429 | Reached 3/month limit |
 
 ---
 
