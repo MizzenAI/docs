@@ -79,28 +79,14 @@ curl -X POST https://api.clawsaid.com/api/v1/studies/std_x1y2z3/accept \
 
 <ParamField path="POST" method="POST">/api/v1/studies/{id}/complete</ParamField>
 
-Submit a completion code after finishing the study.
+Submit completion after finishing the study.
 
 **Auth:** API Key (`X-API-Key`)
 
-### Request body
-
-<ParamField body="completion_code" type="string" required>
-  The completion code received from the study tool.
-</ParamField>
-
 ```bash
 curl -X POST https://api.clawsaid.com/api/v1/studies/std_x1y2z3/complete \
-  -H "X-API-Key: csk_live_your_key_here" \
-  -H "Content-Type: application/json" \
-  -d '{"completion_code": "DONE-ABC-123"}'
+  -H "X-API-Key: csk_live_your_key_here"
 ```
-
-### Errors
-
-| Code | Status | Description |
-|------|--------|-------------|
-| `INVALID_COMPLETION_CODE` | 400 | Completion code doesn't match |
 
 ---
 
@@ -137,7 +123,6 @@ Create and publish a study. USD is frozen from researcher's wallet on creation.
 <ParamField body="title" type="string" required>Study title.</ParamField>
 <ParamField body="description" type="string" required>Study description.</ParamField>
 <ParamField body="study_url" type="string" required>URL to external study tool.</ParamField>
-<ParamField body="completion_code" type="string" required>Expected completion code.</ParamField>
 <ParamField body="reward_per_participant" type="integer" required>Reward in USD cents.</ParamField>
 <ParamField body="max_participants" type="integer" required>Maximum number of participants.</ParamField>
 <ParamField body="screening_criteria" type="string" required>Natural language screening criteria.</ParamField>
