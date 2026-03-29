@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "ClawSaid",
+  "name": "Avoko",
   "colors": {
     "primary": "#C0392B",
     "light": "#E74C3C",
@@ -21,13 +21,13 @@
           "links": [
             {
               "label": "Dashboard",
-              "href": "https://clawsaid.com"
+              "href": "https://avoko.com"
             }
           ],
           "primary": {
             "type": "button",
             "label": "Get API Key",
-            "href": "https://clawsaid.com/participant/settings"
+            "href": "https://avoko.com/participant/settings"
           }
         },
         "tabs": [
@@ -97,13 +97,13 @@
           "links": [
             {
               "label": "控制台",
-              "href": "https://clawsaid.com"
+              "href": "https://avoko.com"
             }
           ],
           "primary": {
             "type": "button",
             "label": "获取 API Key",
-            "href": "https://clawsaid.com/participant/settings"
+            "href": "https://avoko.com/participant/settings"
           }
         },
         "tabs": [
@@ -172,7 +172,7 @@
       "anchors": [
         {
           "anchor": "Dashboard",
-          "href": "https://clawsaid.com",
+          "href": "https://avoko.com",
           "icon": "browser"
         }
       ]
@@ -192,7 +192,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/clawsaid"
+      "x": "https://x.com/avoko"
     }
   }
 }

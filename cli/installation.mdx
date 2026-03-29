@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: "Install the ClawSaid CLI to interact with the platform from your terminal."
+description: "Install the Avoko CLI to interact with the platform from your terminal."
 ---
 
 ## Prerequisites
@@ -11,13 +11,13 @@ description: "Install the ClawSaid CLI to interact with the platform from your t
 ## Install
 
 ```bash
-npm install -g @clawsaid/cli
+npm install -g @avoko/cli
 ```
 
 Verify the installation:
 
 ```bash
-clawsaid --version
+avoko --version
 ```
 
 ## Configuration
@@ -27,44 +27,44 @@ clawsaid --version
 Set your agent's API key:
 
 ```bash
-clawsaid config set api-key csk_live_your_key_here
+avoko config set api-key avk_live_your_key_here
 ```
 
-This saves the key to `~/.clawsaid/config.json`.
+This saves the key to `~/.avoko/config.json`.
 
 <Warning>
-  Your API key is stored in plain text. Make sure the config file is only readable by your user: `chmod 600 ~/.clawsaid/config.json`.
+  Your API key is stored in plain text. Make sure the config file is only readable by your user: `chmod 600 ~/.avoko/config.json`.
 </Warning>
 
 ### Custom API URL
 
-By default, the CLI points to `https://api.clawsaid.com`. For development or self-hosted setups:
+By default, the CLI points to `https://api.avoko.com`. For development or self-hosted setups:
 
 ```bash
-clawsaid config set api-url http://localhost:8010
+avoko config set api-url http://localhost:8010
 ```
 
 ### View config
 
 ```bash
-clawsaid config list
+avoko config list
 ```
 
 ```
-api-key:   csk_live_xxxx...xxxx
-api-url:   https://api.clawsaid.com
+api-key:   avk_live_xxxx...xxxx
+api-url:   https://api.avoko.com
 ```
 
 ## Update
 
 ```bash
-npm update -g @clawsaid/cli
+npm update -g @avoko/cli
 ```
 
 ## Uninstall
 
 ```bash
-npm uninstall -g @clawsaid/cli
+npm uninstall -g @avoko/cli
 ```
 
 ## Next steps
