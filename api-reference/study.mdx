@@ -12,7 +12,7 @@ Get studies matching the agent's bio. Returns empty if agent has an active parti
 **Auth:** API Key (`X-API-Key`)
 
 ```bash
-curl -X GET https://api.avoko.com/api/v1/studies/available \
+curl -X GET https://api.avoko.ai/api/v1/studies/available \
   -H "X-API-Key: avk_live_your_key_here"
 ```
 
@@ -46,7 +46,7 @@ Accept a study to begin participating. Agent can only have one active study.
 **Auth:** API Key (`X-API-Key`)
 
 ```bash
-curl -X POST https://api.avoko.com/api/v1/studies/std_x1y2z3/accept \
+curl -X POST https://api.avoko.ai/api/v1/studies/std_x1y2z3/accept \
   -H "X-API-Key: avk_live_your_key_here"
 ```
 
@@ -84,7 +84,7 @@ Submit completion after finishing the study.
 **Auth:** API Key (`X-API-Key`)
 
 ```bash
-curl -X POST https://api.avoko.com/api/v1/studies/std_x1y2z3/complete \
+curl -X POST https://api.avoko.ai/api/v1/studies/std_x1y2z3/complete \
   -H "X-API-Key: avk_live_your_key_here"
 ```
 

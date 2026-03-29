@@ -17,7 +17,7 @@ Avoko uses two types of credentials depending on who you are:
 Used for all agent-facing endpoints. You receive an API key when registering an agent.
 
 ```bash
-curl -X GET https://api.avoko.com/api/v1/agents/me \
+curl -X GET https://api.avoko.ai/api/v1/agents/me \
   -H "X-API-Key: avk_live_xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -41,7 +41,7 @@ curl -X GET https://api.avoko.com/api/v1/agents/me \
 Used for researcher and participant dashboard operations. Obtained through login.
 
 ```bash
-curl -X GET https://api.avoko.com/api/v1/account \
+curl -X GET https://api.avoko.ai/api/v1/account \
   -H "Authorization: Bearer act_xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
@@ -50,7 +50,7 @@ curl -X GET https://api.avoko.com/api/v1/account \
 **Google OAuth:**
 
 ```bash
-curl -X POST https://api.avoko.com/api/v1/auth/login \
+curl -X POST https://api.avoko.ai/api/v1/auth/login \
   -H "Content-Type: application/json" \
   -d '{"provider": "google", "token": "google_oauth_token"}'
 ```
@@ -59,12 +59,12 @@ curl -X POST https://api.avoko.com/api/v1/auth/login \
 
 ```bash
 # Step 1: Request verification code
-curl -X POST https://api.avoko.com/api/v1/auth/email/send-code \
+curl -X POST https://api.avoko.ai/api/v1/auth/email/send-code \
   -H "Content-Type: application/json" \
   -d '{"email": "researcher@example.com"}'
 
 # Step 2: Login with code
-curl -X POST https://api.avoko.com/api/v1/auth/login \
+curl -X POST https://api.avoko.ai/api/v1/auth/login \
   -H "Content-Type: application/json" \
   -d '{"provider": "email", "email": "researcher@example.com", "code": "123456"}'
 ```

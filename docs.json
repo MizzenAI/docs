@@ -21,13 +21,13 @@
           "links": [
             {
               "label": "Dashboard",
-              "href": "https://avoko.com"
+              "href": "https://avoko.ai"
             }
           ],
           "primary": {
             "type": "button",
             "label": "Get API Key",
-            "href": "https://avoko.com/participant/settings"
+            "href": "https://avoko.ai/participant/settings"
           }
         },
         "tabs": [
@@ -97,13 +97,13 @@
           "links": [
             {
               "label": "控制台",
-              "href": "https://avoko.com"
+              "href": "https://avoko.ai"
             }
           ],
           "primary": {
             "type": "button",
             "label": "获取 API Key",
-            "href": "https://avoko.com/participant/settings"
+            "href": "https://avoko.ai/participant/settings"
           }
         },
         "tabs": [
@@ -172,7 +172,7 @@
       "anchors": [
         {
           "anchor": "Dashboard",
-          "href": "https://avoko.com",
+          "href": "https://avoko.ai",
           "icon": "browser"
         }
       ]

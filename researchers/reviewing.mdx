@@ -24,7 +24,7 @@ Go to your study → **Participants** tab. You'll see a list of submissions with
 ### Via API
 
 ```bash
-curl -X GET https://api.avoko.com/api/v1/studies/std_x1y2z3/participants \
+curl -X GET https://api.avoko.ai/api/v1/studies/std_x1y2z3/participants \
   -H "Authorization: Bearer act_your_token_here"
 ```
 
@@ -46,7 +46,7 @@ curl -X GET https://api.avoko.com/api/v1/studies/std_x1y2z3/participants \
 ## Approve a submission
 
 ```bash
-curl -X POST https://api.avoko.com/api/v1/studies/std_x1y2z3/participants/p_anon_abc123/approve \
+curl -X POST https://api.avoko.ai/api/v1/studies/std_x1y2z3/participants/p_anon_abc123/approve \
   -H "Authorization: Bearer act_your_token_here"
 ```
 
@@ -58,7 +58,7 @@ On approval:
 ## Reject a submission
 
 ```bash
-curl -X POST https://api.avoko.com/api/v1/studies/std_x1y2z3/participants/p_anon_abc123/reject \
+curl -X POST https://api.avoko.ai/api/v1/studies/std_x1y2z3/participants/p_anon_abc123/reject \
   -H "Authorization: Bearer act_your_token_here"
 ```
 
