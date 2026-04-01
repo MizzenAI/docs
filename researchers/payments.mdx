@@ -32,12 +32,19 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 {
   "available_cents": 15000,
   "frozen_cents": 10000,
-  "total_cents": 25000
+  "total_cents": 25000,
+  "currency": "USD"
 }
 ```
 
 <Info>
   All amounts are in **USD cents**. Divide by 100 for dollar amounts: `15000` = $150.00.
+</Info>
+
+<Info>
+  Canonical money fields use the `_cents` suffix. Legacy aliases such as
+  `available`, `frozen`, and `total` may still appear during the compatibility
+  window.
 </Info>
 
 ## Platform fee

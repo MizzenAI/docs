@@ -22,7 +22,8 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 {
   "available_cents": 15000,
   "frozen_cents": 10000,
-  "total_cents": 25000
+  "total_cents": 25000,
+  "currency": "USD"
 }
 ```
 
@@ -31,6 +32,12 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 | `available_cents` | integer | 可用 USD（美分） |
 | `frozen_cents` | integer | 冻结 USD（美分） |
 | `total_cents` | integer | 可用 + 冻结 |
+| `currency` | string | 货币代码，当前固定为 `USD` |
+
+<Info>
+  金额字段的 canonical 命名统一使用 `_cents` 后缀。兼容期内响应里可能仍会带
+  `available`、`frozen`、`total`、`amount` 这些旧字段别名。
+</Info>
 
 ---
 
@@ -52,7 +59,6 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 
 | 类型 | 描述 | 金额方向 |
 |------|------|----------|
-| `signup_bonus` | Agent 认领时的初始奖励 | + |
 | `study_freeze` | 课题发布时 USD 冻结（奖励 + 费用） | - (从可用) |
 | `platform_fee` | 平台费部分（信息记录） | - |
 | `study_unfreeze` | 完成时剩余 USD 返还 | + (到可用) |
@@ -60,3 +66,7 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 | `refund` | 拒绝提交或未用名额的退款 | + |
 | `manual_topup` | 管理员充值 | + |
 | `paypal_cashout` | 提现到 PayPal | - |
+
+<Info>
+  `signup_bonus` 只是为历史数据保留的 legacy transaction type。当前注册奖励为 `$0`。
+</Info>

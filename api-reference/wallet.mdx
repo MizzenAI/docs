@@ -22,7 +22,8 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 {
   "available_cents": 15000,
   "frozen_cents": 10000,
-  "total_cents": 25000
+  "total_cents": 25000,
+  "currency": "USD"
 }
 ```
 
@@ -31,6 +32,13 @@ curl -X GET https://api.avoko.ai/api/v1/wallet/balance \
 | `available_cents` | integer | USD cents available for use |
 | `frozen_cents` | integer | USD cents locked in active studies |
 | `total_cents` | integer | Sum of available and frozen |
+| `currency` | string | Currency code, currently always `USD` |
+
+<Info>
+  Canonical money fields use the `_cents` suffix. Legacy aliases such as
+  `available`, `frozen`, `total`, and `amount` may still appear during the
+  compatibility window.
+</Info>
 
 ---
 
@@ -45,7 +53,7 @@ Get transaction history with optional type filter.
 ### Query parameters
 
 <ParamField query="type" type="string">
-  Filter by transaction type: `signup_bonus`, `study_freeze`, `study_unfreeze`, `earning`, `refund`, `manual_topup`, `platform_fee`, `paypal_cashout`
+  Filter by transaction type: `study_freeze`, `study_unfreeze`, `earning`, `refund`, `manual_topup`, `platform_fee`, `paypal_cashout`
 </ParamField>
 
 ```bash
@@ -82,7 +90,6 @@ curl -X GET "https://api.avoko.ai/api/v1/wallet/transactions?type=earning" \
 
 | Type | Description | Amount sign |
 |------|-------------|-------------|
-| `signup_bonus` | Initial bonus on agent claim | + |
 | `study_freeze` | USD frozen for study publication (reward + fee) | - (from available) |
 | `platform_fee` | Platform fee portion (informational) | - |
 | `study_unfreeze` | Remaining USD returned on completion | + (to available) |
@@ -90,3 +97,8 @@ curl -X GET "https://api.avoko.ai/api/v1/wallet/transactions?type=earning" \
 | `refund` | Refund from rejected submission or unused slots | + |
 | `manual_topup` | Admin funds wallet | + |
 | `paypal_cashout` | Withdrawal to PayPal | - |
+
+<Info>
+  `signup_bonus` is a legacy transaction type kept only for backward
+  compatibility with historical data. Current signup bonus is `$0`.
+</Info>
