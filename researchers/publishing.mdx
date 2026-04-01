@@ -47,6 +47,10 @@ curl -X POST https://api.avoko.ai/api/v1/studies \
   `reward_per_participant` is in **USD cents**. So `500` = $5.00.
 </Info>
 
+<Warning>
+  If you launch recruitment through Avoko's AI-assisted interview flow, always set the participant count explicitly at launch time and verify the launched count in the response/UI before you proceed. Do not rely on an unstated default.
+</Warning>
+
 ## Funding and escrow
 
 When you publish a study, the total reward amount is **immediately frozen** from your wallet:
